@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment 1</title>
+    <style>
+        .main{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+            gap: 20px;
+            align-items: center;
+        }
+        .section_1{
+            padding: 0px 50px;
+        }
+        .section_2{
+            background-color: #fff203;
+            height: 100%;
+            min-height: 90vh;
+        }
+        .section_1 h1{
+            font-size: 40px;
+        }
+        .section_1 p{
+            color: #496259;
+        }
+        .section_1 button{
+            padding: 10px 50px;
+            border: 0;
+            background-color: #000000;
+            color: #ffffff;
+            margin-top: 30px;
+            font-size: large;
+        }
+        .section_2 img{
+            width: 70%;
+            height: 100%;
+        }
+        nav{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+        }
+        nav img{
+            width: 50px;
+        }
+        nav a{
+            text-decoration: none;
+            padding-right: 50px;
+            color: #000;
+        }
+        nav a:hover{
+            color: #00ee7f;
+            font-weight: bold;
+        }
+        nav button{
+            margin-left: 60%;
+            padding: 10px 0px;
+            border: 0;
+            border-radius: 5px;
+            background-color: #0fdb6b;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="images/download.png" alt="">
+        <div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <button>Login</button>
+    </nav>
+    <div class="main">
+        <section class="section_1">
+            <h1>Healty Food</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut temporibus amet quas hic! Enim delectus atque voluptas commodi, omnis eos est. Sapiente suscipit repellendus voluptas cumque accusantium, veritatis odit corporis?</p>
+            <button>Read More</button>
+        </section>
+        <section class="section_2">
+            <img src="images/hf1.jpg" alt="Heatyl healthy-food">
+        </section>
+    </div>
+</body>
+</html>
